@@ -7,7 +7,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: gainsboro;
   color: #212121;
   line-height: 1.5;
 }
@@ -17,6 +17,53 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.menu-list {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-item,
+.btn-back {
+  width: 400px;
+  text-align: center;
+  border-style: ridge;
+  font-size: 40px;
+  transition: background-color, linear, 200ms;
+  background-color: aliceblue;
+}
+.menu-item:hover,
+.menu-item:focus {
+  background-color: antiquewhite;
+}
+.btn-back {
+  font-size: 20px;
+}
+
+.btn-back:hover,
+.btn-back:focus {
+  background-color: antiquewhite;
+}
+
 li {
   list-style: none;
+}
+
+.vimeo-player {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.feedback-form {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 100px;
 }
